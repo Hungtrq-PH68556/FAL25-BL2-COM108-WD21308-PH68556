@@ -142,16 +142,19 @@ void demoString()
     printf("\n");
 }
 
+void thaoTacMonHoc()
+{
+    struct hocPhan monHoc[100];
+    int n = 3;
 
+    for (int i = 0; i < n; i++)
+    {
+        while (getchar() != '\n');
+        printf(" ");
+        getchar(monhoc)
+    }
 
-        }
-        
-
-
-
-
-    }  while(chonChucNang != 0);
-    return 0;
+}
 int main()
 {
     int chonChucNang;
@@ -175,7 +178,7 @@ int main()
         printf("\n");
         printf("vui long chon chuc nang: ");
         scanf_s("%d", &chonChucNang);
-       if (chonChucNang == 0)
+        if (chonChucNang == 0)
         {
             printf("Thoat chuong trinh.\n");
             break;
@@ -200,9 +203,10 @@ int main()
             demoString();
             break;
         case 0:
-                printf("Thoat chuong trinh\n");
-                break;
-            default:
-                printf("Lua chon khong hop le, vui long chon chuc nang trong menu.\n");
-
+            printf("Thoat chuong trinh\n");
+            break;
+        default:
+            printf("Lua chon khong hop le, vui long chon chuc nang trong menu.\n");
+        }
+    }
 }
